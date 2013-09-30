@@ -1,0 +1,51 @@
+{% extends "/index.html" %}
+
+<head>
+
+	{% block head %} 
+
+			<meta charset="utf-8">
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	{% endblock %}
+
+</head>
+
+<body>
+	{% block body %}
+	
+
+	<p id="ahw">Σ（ﾟдﾟlll）</p>
+		
+		<P class="h4">Shut up! Don't spill the beans!</P>
+		<hr></hr>
+		<p>database:</p>
+		
+
+		{% for emoticon in emoticons %}
+				<h6>{{ emoticon.decode('utf-8') }}</h6>
+			{% endfor %}</P>
+			
+
+		</p>
+		<p>
+		lucky_number = random.randrange(0,len(emoticons)-1)
+	your_emoticons = emoticons[lucky_number]
+	return render_template("greetings.html", your_emoticons = your_emoticons.decode('utf-8'))
+</p>
+
+		</br></br>
+		
+	
+	{% endblock %}
+</body>
+
+
+{% block scripts %} 
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+{% endblock %}
+

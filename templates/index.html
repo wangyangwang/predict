@@ -1,0 +1,37 @@
+
+
+
+<html>
+{% block styles %}
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+<head>
+
+<title>{{ this_title }}</title>
+</head>
+
+<body>
+
+	{% block body %}
+<div id="bigcontainer" >
+<p class="lead">Predict Your Mood</p>
+<a href="/greetings" class="btn btn-default">Magic happens</a>
+</div>
+	{% endblock %}
+</body>
+
+<footer>
+
+	{% block footer %}
+	<hr size="2" width="80%"></hr>
+		<h6 class="text-muted" >Created By: Yang Wang</h6>
+		<h6 class="text-muted" >Contact information: <a href="yang.wang.dec@gmail.com">
+		yang.wang.dec@gmail.com</a>.</h6>
+		<h6 class="text-muted" ><a href="http://yangwangphilo.com/">Yang's Website</a></h6>
+	{% endblock %}
+
+
+</footer>
+
+</html>

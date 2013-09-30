@@ -1,0 +1,45 @@
+
+/*
+ ==========================================================================
+Author's custom styles
+========================================================================== */
+
+
+body {
+    text-align: center;
+}
+
+#emoticons {
+    text-align: center;
+}
+
+#bigcontainer {
+    padding-top: 20%;
+    width: auto;
+    height: 600px;
+
+}
+
+#bigcontainer_greetings {
+    padding-top: 14%;
+    width: auto;
+    height: 600px;
+
+}
+
+
+#your_emoticons {
+    font-size: 1000%;
+}
+
+
+
+#ahw {
+
+    font-size: 500%;
+}
+
+
+
+
+
